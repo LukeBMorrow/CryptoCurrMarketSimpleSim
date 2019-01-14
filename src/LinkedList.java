@@ -15,13 +15,12 @@ public class LinkedList {
 
         if (top.getItem() instanceof Investor) {
             while (curr != null && result == null) {
-                if (((Investor) curr.getItem()).getUserID() == ID) {
+                if (((Investor) curr.getItem()).getUserID().equals(ID)) {
                     result = curr.getItem();
                 }
                 curr = curr.getNext();
             }
         }
-
         return result;
     }
 }
