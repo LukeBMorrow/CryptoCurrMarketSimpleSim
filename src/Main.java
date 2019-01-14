@@ -54,4 +54,14 @@ public class Main {
         a.addItem(b);
         return a.search("ID") == b;
     }
+
+    private static boolean TestHashAddItem(){
+        Investor a = new Investor("name","ID",10);
+
+    }
+
+    private static boolean TestHashGetItem(){
+
+    }
+
 }
