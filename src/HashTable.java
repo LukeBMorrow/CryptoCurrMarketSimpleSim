@@ -14,18 +14,21 @@ public class HashTable {
 
     public void addItem(Object o) {
         if (o instanceof Investor) {
-            int hashKey = generateHash(((Investor) o).getUserID());
-            table[hashKey].addItem(o);
+            if (getItem(((Investor) o).getUserID()) == null) {
+                int hashKey = generateHash(((Investor) o).getUserID());
+                table[hashKey].addItem(o);
+            }else
+                System.out.println("Error: user ID already exists.");
         } else {
-            System.out.println("Error: unrecognized type in hash table");
+            System.out.println("Error: unrecognized type in hash table.");
         }
     }
 
     private int generateHash(String s) {
-        int result=0;
+        int result = 0;
         for (int i = 0; i < s.length(); i++) {
-            result += ((int)(s.charAt(i)))* HASH_COEFFICIENT;
-            result%=TABLE_SIZE;
+            result += ((int) (s.charAt(i))) * HASH_COEFFICIENT;
+            result %= TABLE_SIZE;
         }
         return result;
     }

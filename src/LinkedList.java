@@ -13,7 +13,7 @@ public class LinkedList {
         Node curr = top;
         Object result = null;
 
-        if (top.getItem() instanceof Investor) {
+        if (top!=null && top.getItem() instanceof Investor) {
             while (curr != null && result == null) {
                 if (((Investor) curr.getItem()).getUserID().equals(ID)) {
                     result = curr.getItem();
