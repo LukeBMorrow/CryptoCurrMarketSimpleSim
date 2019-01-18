@@ -9,7 +9,7 @@ public class Cryptocurrency {
         this.quantity = quantity;
     }
 
-    public String getUserID() {
+    public String getCurrID() {
         return currID;
     }
 

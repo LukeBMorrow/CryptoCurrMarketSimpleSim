@@ -9,6 +9,10 @@ public class LinkedList {
         top = new Node(o, top);
     }
 
+    public Object getTopItem(){
+        return top.getItem();
+    }
+
     public Object search(String ID) {
         Node curr = top;
         Object result = null;

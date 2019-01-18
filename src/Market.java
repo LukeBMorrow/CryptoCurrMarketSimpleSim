@@ -7,4 +7,8 @@ public class Market {
     public Investor getInvestor(String id){
         return a;
     }
+
+    public void trade(int amount, String currencyID, Investor sender, Investor receiver){
+
+    }
 }
