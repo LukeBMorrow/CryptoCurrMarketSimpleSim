@@ -6,10 +6,6 @@ public class Tests {
     public static void runTests() {
         System.out.print("Testing market creation... ");
         checkSuccess(TestMarketCreation());
-        System.out.print("Testing investor creation... ");
-        checkSuccess(TestInvestorCreation());
-        System.out.print("Testing single investor storage... ");
-        checkSuccess(TestSingleInvestorStored());
         System.out.print("Testing single linked list item storage... ");
         checkSuccess(TestSingleLinkedListItem());
         System.out.print("Testing single hash table item storage... ");
@@ -39,17 +35,6 @@ public class Tests {
         return main != null;
     }
 
-    private static boolean TestInvestorCreation() {
-        Market main = new Market();
-        main.newInvestor("FName LName0", "User", 10);
-        return main.getInvestor("User") != null;
-    }
-
-    private static boolean TestSingleInvestorStored() {
-        Market main = new Market();
-        main.newInvestor("FName LName0", "User", 10);
-        return main.getInvestor("User").getUserID() == "User";
-    }
 
     private static boolean TestSingleLinkedListItem() {
         LinkedList a = new LinkedList();
