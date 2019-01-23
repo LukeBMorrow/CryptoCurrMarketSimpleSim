@@ -6,7 +6,7 @@ public class Transaction extends LinkItems{
     private String prevTransactionHashcode;
     private int hashcode;
 
-    public Transaction(int amount, Investor sender, Investor receiver, String prevTransactionHashcode){
+    public Transaction(int amount,Investor receiver, Investor sender, String prevTransactionHashcode){
         this.amount =amount;
         this.sender=sender;
         this.receiver =receiver;
@@ -15,9 +15,10 @@ public class Transaction extends LinkItems{
         hashcode = this.hashCode();
     }
 
-    public Transaction(int amount, Investor receiver){
+    public Transaction(int amount, Investor receiver,String prevTransactionHashcode){
         this.amount =amount;
         this.receiver =receiver;
+        this.prevTransactionHashcode=prevTransactionHashcode;
         type="mine";
     }
 

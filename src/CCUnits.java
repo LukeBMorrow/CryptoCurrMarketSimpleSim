@@ -1,18 +1,14 @@
 public class CCUnits extends LinkItems {
-    private Cryptocurrency currencyType;
+    private String currencyID;
     private int currencyAmount;
 
-    public CCUnits(Cryptocurrency currencyType, int currencyAmount) {
-        this.currencyType = currencyType;
+    public CCUnits(String currencyID, int currencyAmount) {
+        this.currencyID = currencyID;
         this.currencyAmount = currencyAmount;
     }
 
     public String getID() {
-        return currencyType.getID();
-    }
-
-    public Cryptocurrency getCurrencyType() {
-        return currencyType;
+        return currencyID;
     }
 
     public int getCurrencyAmount() {
