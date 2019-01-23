@@ -9,7 +9,7 @@ public class Cryptocurrency extends LinkItems{
         this.quantity = quantity;
     }
 
-    public String getCurrID() {
+    public String getID() {
         return currID;
     }
 

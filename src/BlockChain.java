@@ -7,6 +7,6 @@ public class BlockChain {
     }
 
     public void addTransaction(int amount, Investor sender, Investor receiver){
-        chain.addItem(new Transaction(amount,sender,receiver,((Transaction)chain.getTopItem()).getHashcode()));
+        chain.addItem(new Transaction(amount,sender,receiver,(chain.getTopItem()).getID()));
     }
 }

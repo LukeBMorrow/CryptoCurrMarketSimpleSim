@@ -3,10 +3,10 @@ public class Transaction extends LinkItems{
     private int amount;
     private Investor receiver;
     private Investor sender;
-    private int prevTransactionHashcode;
+    private String prevTransactionHashcode;
     private int hashcode;
 
-    public Transaction(int amount, Investor sender, Investor receiver, int prevTransactionHashcode){
+    public Transaction(int amount, Investor sender, Investor receiver, String prevTransactionHashcode){
         this.amount =amount;
         this.sender=sender;
         this.receiver =receiver;
@@ -21,16 +21,16 @@ public class Transaction extends LinkItems{
         type="mine";
     }
 
-    public int getHashcode(){
-        return hashcode;
+    public String getID(){
+        return ""+hashcode;
     }
 
     public String toString(){
         String result;
         if(type.equals("trade")) {
-            result = (type +" "+ receiver.getUserID() +" "+ sender.getUserID()+" "+ amount);
+            result = (type +" "+ receiver.getID() +" "+ sender.getID()+" "+ amount);
         }else{
-            result = (type +" "+ receiver.getUserID() +" "+ amount);
+            result = (type +" "+ receiver.getID() +" "+ amount);
         }
         return result;
     }

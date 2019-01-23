@@ -11,20 +11,8 @@ public class Investor extends LinkItems{
         wallet = new LinkedList();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getCash() {
-        return cash;
-    }
-
-    public String getUserID() {
+    public String getID() {
         return userID;
-    }
-
-    public int mine(String currID){
-        return 0;
     }
 
 }
