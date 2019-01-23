@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b56ff3db-1347-4286-91b8-13a90db6c346" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlockChain.java" afterPath="$PROJECT_DIR$/src/BlockChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCUnits.java" afterPath="$PROJECT_DIR$/src/CCUnits.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cryptocurrency.java" afterPath="$PROJECT_DIR$/src/Cryptocurrency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Investor.java" afterPath="$PROJECT_DIR$/src/Investor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HashTable.java" afterPath="$PROJECT_DIR$/src/HashTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Market.java" afterPath="$PROJECT_DIR$/src/Market.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Transaction.java" afterPath="$PROJECT_DIR$/src/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wallet.java" afterPath="$PROJECT_DIR$/src/Wallet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Market.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Market.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Market.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+              <folding>
+                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,14 +55,24 @@
       <file leaf-file-name="Cryptocurrency.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cryptocurrency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wallet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HashTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wallet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wallet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -94,21 +105,6 @@
             <state relative-caret-position="102">
               <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Investor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Investor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding>
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,19 +152,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/HashTable.java" />
         <option value="$PROJECT_DIR$/src/Tests.java" />
         <option value="$PROJECT_DIR$/src/Controller.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/LinkItems.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/Market.java" />
         <option value="$PROJECT_DIR$/src/Transaction.java" />
         <option value="$PROJECT_DIR$/src/BlockChain.java" />
         <option value="$PROJECT_DIR$/src/Investor.java" />
         <option value="$PROJECT_DIR$/src/CCUnits.java" />
-        <option value="$PROJECT_DIR$/src/Cryptocurrency.java" />
         <option value="$PROJECT_DIR$/src/Wallet.java" />
+        <option value="$PROJECT_DIR$/src/HashTable.java" />
+        <option value="$PROJECT_DIR$/src/Market.java" />
+        <option value="$PROJECT_DIR$/src/Cryptocurrency.java" />
       </list>
     </option>
   </component>
@@ -369,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548274472032</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding more functionality to wallet and investor to make trades possible.">
+      <created>1548276516705</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548276516705</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -416,7 +419,8 @@
     <MESSAGE value="filled out Controller and added some more prototypes in Market." />
     <MESSAGE value="Added a LinkItems class to better relate items in the linked list." />
     <MESSAGE value="Added the foundations for a the wallet of an investor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the foundations for a the wallet of an investor." />
+    <MESSAGE value="adding more functionality to wallet and investor to make trades possible." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more functionality to wallet and investor to make trades possible." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -453,7 +457,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -531,7 +540,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -601,7 +615,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +674,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -709,7 +733,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -751,14 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="71" lean-forward="false" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -786,21 +807,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/Investor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
-            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,24 +828,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BlockChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Investor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,18 +861,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cryptocurrency.java">
+    <entry file="file://$PROJECT_DIR$/src/LinkItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Market.java">
+    <entry file="file://$PROJECT_DIR$/src/HashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cryptocurrency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -877,6 +898,19 @@
         <state relative-caret-position="306">
           <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Market.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

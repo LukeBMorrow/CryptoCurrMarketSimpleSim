@@ -12,10 +12,10 @@ public class HashTable {
 
     }
 
-    public void addItem(Object o) {
+    public void addItem(LinkItems o) {
         if (o instanceof Investor) {
-            if (getItem(((Investor) o).getUserID()) == null) {
-                int hashKey = generateHash(((Investor) o).getUserID());
+            if (getItem(o.getID()) == null) {
+                int hashKey = generateHash(o.getID());
                 table[hashKey].addItem(o);
             }else
                 System.out.println("Error: user ID already exists.");

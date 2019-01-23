@@ -24,10 +24,6 @@ public class Cryptocurrency extends LinkItems {
     }
 
     public void addQuantity(int ammount, Investor reciever) {
-        if (ammount <= quantity) {
-            chain.addTransaction(ammount, reciever);
-            quantity -= ammount;
-            reciever.
-        }
+
     }
 }

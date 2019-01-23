@@ -1,10 +1,10 @@
 public class Market {
-    private LinkedList investors;
-    private LinkedList cryptoCurrencies;
+    private HashTable investors;
+    private HashTable cryptoCurrencies;
 
     public Market() {
-        investors = new LinkedList();
-        cryptoCurrencies = new LinkedList();
+        investors = new HashTable();
+        cryptoCurrencies = new HashTable();
     }
 
     public void newCryptocurrency(String name, String currID, int amount) {
@@ -16,19 +16,18 @@ public class Market {
     }
 
     public void mine(String investorID, String currID, int amount) {
-        Cryptocurrency chCurrency = (Cryptocurrency) cryptoCurrencies.search(currID);
-        if(chCurrency.getQuantity()>amount){
-
-        }
+        ((Cryptocurrency) cryptoCurrencies.getItem(currID)).mine();
     }
 
     public void trade(String investor1, String investor2, String cryptoCurr1, int curr1Amount, String cryptoCurr2, int curr2Amount) {
     }
 
     public void report(String investorID) {
+        investors.getItem(investorID).report();
     }
 
     public void cryport(String currID) {
+        cryptoCurrencies.getItem(currID).report();
     }
 
 }
