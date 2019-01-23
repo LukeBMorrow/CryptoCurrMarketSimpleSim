@@ -1,4 +1,4 @@
-public class Transaction {
+public class Transaction extends LinkItems{
     private String type;
     private int amount;
     private Investor receiver;

@@ -1,4 +1,4 @@
-public class Investor {
+public class Investor extends LinkItems{
     private String name;
     private String userID;
     private int cash;

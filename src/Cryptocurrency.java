@@ -1,4 +1,4 @@
-public class Cryptocurrency {
+public class Cryptocurrency extends LinkItems{
     private String name;
     private String currID;
     private int quantity;

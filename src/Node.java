@@ -1,8 +1,8 @@
 public class Node {
-    private Object item;
+    private LinkItems item;
     private Node next;
 
-    public Node(Object item, Node next){
+    public Node(LinkItems item, Node next){
         this.item = item;
         this.next = next;
     }
@@ -11,7 +11,7 @@ public class Node {
         return next;
     }
 
-    public Object getItem() {
+    public LinkItems getItem() {
         return item;
     }
 
