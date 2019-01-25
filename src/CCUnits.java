@@ -1,4 +1,4 @@
-public class CCUnits extends LinkItems {
+public class CCUnits extends LinkItem {
     private String currencyID;
     private int currencyAmount;
 

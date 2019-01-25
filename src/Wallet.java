@@ -8,17 +8,12 @@ public class Wallet {
         currencies.addItem(new CCUnits("CAD", cashAmount));
     }
 
-    public void addCurrency(String currID, int amount) {
+    public boolean hasSufficientCurr(String currID, int amount) {
+        boolean result = false;
+        LinkItem ownedCurr = currencies.search(currID);
 
-    }
-
-    public boolean subtractCurrency(String currID, int amount) {
-        boolean result = true;
-        CCUnits ownedCurrency = (CCUnits) currencies.search(currID);
-        if (ownedCurrency.getCurrencyAmount() > amount) {
-            ownedCurrency.addCurrencyAmount(-amount);
-        } else {
-            result = false;
+        if (ownedCurr instanceof CCUnits) {
+            result = ((CCUnits) currencies.search(currID)).getCurrencyAmount() >= amount;
         }
         return result;
     }

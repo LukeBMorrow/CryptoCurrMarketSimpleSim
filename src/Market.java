@@ -19,15 +19,22 @@ public class Market {
         ((Cryptocurrency) cryptoCurrencies.getItem(currID)).mine();
     }
 
-    public void trade(String investor1, String investor2, String cryptoCurr1, int curr1Amount, String cryptoCurr2, int curr2Amount) {
+    public void trade(String investorID1, String investorID2, String cryptoCurr1, int curr1Amount, String cryptoCurr2, int curr2Amount) {
+        Investor investor1 = ((Investor)investors.getItem(investorID1));
+        Investor investor2 = ((Investor)investors.getItem(investorID2));
+
+        if((investor1).hasSufficientCurr(cryptoCurr1,curr1Amount) && investor2.hasSufficientCurr(cryptoCurr2,curr2Amount)){
+            investor1.transfer(cryptoCurr1,curr1Amount,investor2);
+            investor2.transfer(cryptoCurr2,curr2Amount,investor1);
+        }
     }
 
     public void report(String investorID) {
-        investors.getItem(investorID).report();
+        ((Investor)investors.getItem(investorID)).report();
     }
 
     public void cryport(String currID) {
-        cryptoCurrencies.getItem(currID).report();
+        ((Cryptocurrency)cryptoCurrencies.getItem(currID)).report();
     }
 
 }

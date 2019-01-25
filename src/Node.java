@@ -1,8 +1,12 @@
 public class Node {
-    private LinkItems item;
+    private LinkItem item;
     private Node next;
 
-    public Node(LinkItems item, Node next){
+    public Node(){
+        next=null;
+        item=null;
+    }
+    public Node(LinkItem item, Node next){
         this.item = item;
         this.next = next;
     }
@@ -11,7 +15,7 @@ public class Node {
         return next;
     }
 
-    public LinkItems getItem() {
+    public LinkItem getItem() {
         return item;
     }
 

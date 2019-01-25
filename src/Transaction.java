@@ -1,29 +1,20 @@
-public class Transaction extends LinkItems{
+public class Transaction {
     private String type;
     private int amount;
     private Investor receiver;
     private Investor sender;
-    private String prevTransactionHashcode;
-    private int hashcode;
 
-    public Transaction(int amount,Investor receiver, Investor sender, String prevTransactionHashcode){
+    public Transaction(int amount,Investor receiver, Investor sender){
         this.amount =amount;
         this.sender=sender;
         this.receiver =receiver;
         type = "trade";
-        this.prevTransactionHashcode=prevTransactionHashcode;
-        hashcode = this.hashCode();
     }
 
-    public Transaction(int amount, Investor receiver,String prevTransactionHashcode){
+    public Transaction(int amount, Investor receiver){
         this.amount =amount;
         this.receiver =receiver;
-        this.prevTransactionHashcode=prevTransactionHashcode;
         type="mine";
-    }
-
-    public String getID(){
-        return ""+hashcode;
     }
 
     public String toString(){

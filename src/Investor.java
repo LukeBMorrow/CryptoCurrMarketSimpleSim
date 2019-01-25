@@ -1,4 +1,4 @@
-public class Investor extends LinkItems{
+public class Investor extends LinkItem {
     private String name;
     private String userID;
     private Wallet wallet;
@@ -13,12 +13,12 @@ public class Investor extends LinkItems{
         return userID;
     }
 
-    public void addCurr(String currID, int ammount){
-        wallet.addCurrency(currID,ammount);
+    public void report(){
+
     }
 
-    public boolean subtractCurr(String currID, int ammount){
-        return wallet.subtractCurrency(currID,ammount);
+    public boolean hasSufficientCurr(String currID, int amount){
+        return wallet.hasSufficientCurr(currID,amount);
     }
 
 }

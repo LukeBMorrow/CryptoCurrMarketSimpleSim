@@ -5,17 +5,17 @@ public class LinkedList {
         top = null;
     }
 
-    public void addItem(LinkItems o) {
+    public void addItem(LinkItem o) {
         top = new Node(o, top);
     }
 
-    public LinkItems getTopItem() {
+    public LinkItem getTopItem() {
         return top.getItem();
     }
 
-    public LinkItems search(String ID) {
+    public LinkItem search(String ID) {
         Node curr = top;
-        LinkItems result = null;
+        LinkItem result = null;
 
         while (curr != null && result == null) {
             if (curr.getItem().getID().equals(ID)) {

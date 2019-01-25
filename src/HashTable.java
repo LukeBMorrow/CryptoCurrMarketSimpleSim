@@ -12,16 +12,13 @@ public class HashTable {
 
     }
 
-    public void addItem(LinkItems o) {
-        if (o instanceof Investor) {
-            if (getItem(o.getID()) == null) {
-                int hashKey = generateHash(o.getID());
-                table[hashKey].addItem(o);
-            }else
-                System.out.println("Error: user ID already exists.");
-        } else {
-            System.out.println("Error: unrecognized type in hash table.");
-        }
+    public void addItem(LinkItem o) {
+
+        if (getItem(o.getID()) == null) {
+            int hashKey = generateHash(o.getID());
+            table[hashKey].addItem(o);
+        } else
+            System.out.println("Error: ID already exists.");
     }
 
     private int generateHash(String s) {
@@ -33,7 +30,7 @@ public class HashTable {
         return result;
     }
 
-    public Object getItem(String s) {
+    public LinkItem getItem(String s) {
         int hashKey = generateHash(s);
         return table[hashKey].search(s);
     }
