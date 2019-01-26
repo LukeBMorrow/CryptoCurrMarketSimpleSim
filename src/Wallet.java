@@ -17,4 +17,19 @@ public class Wallet {
         }
         return result;
     }
+
+    public void addCurrency(String currID, int amount){
+        LinkItem ownedCurr = currencies.search(currID);
+        if (ownedCurr instanceof CCUnits) {
+            ((CCUnits) ownedCurr).addOrSubtractCurrency(amount);
+        }
+    }
+
+    public void removeCurrency(String currID, int amount){
+        LinkItem ownedCurr = currencies.search(currID);
+        if (ownedCurr instanceof CCUnits) {
+            ((CCUnits) ownedCurr).addOrSubtractCurrency(-amount);
+        }
+    }
+
 }

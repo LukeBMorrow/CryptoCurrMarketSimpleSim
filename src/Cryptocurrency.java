@@ -11,6 +11,19 @@ public class Cryptocurrency extends LinkItem {
         chain = new BlockChain();
     }
 
+    public void addTrade(int amount,Investor receiver, Investor sender){
+        chain.addTransaction(amount,receiver,sender);
+    }
+
+    public void mine(int amount, Investor receiver){
+        if(amount<=quantity){
+            receiver.receive(currID,amount);
+            chain.addTransaction(amount,receiver);
+        }else{
+            System.out.println("ERROR: insufficient cryptocurrency left to mine.");
+        }
+    }
+
     @Override
     public String getID() {
         return currID;

@@ -15,7 +15,7 @@ public class CCUnits extends LinkItem {
         return currencyAmount;
     }
 
-    public void addCurrencyAmount(int amount) {
+    public void addOrSubtractCurrency(int amount) {
         this.currencyAmount += amount;
     }
 }

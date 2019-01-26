@@ -21,4 +21,12 @@ public class Investor extends LinkItem {
         return wallet.hasSufficientCurr(currID,amount);
     }
 
+    public void transfer(String currID,int amount, Investor receiver){
+        wallet.removeCurrency(currID, amount);
+        receiver.wallet.addCurrency(currID, amount);
+    }
+
+    public void receive(String currID, int amount){
+        wallet.addCurrency(currID, amount);
+    }
 }
