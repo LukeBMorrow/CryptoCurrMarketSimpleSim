@@ -1,12 +1,12 @@
 public class Investor extends LinkItem {
     private String name;
     private String userID;
-    private Wallet wallet;
+    private Profile wallet;
 
     public Investor(String name, String userID, int cash){
         this.name=name;
         this.userID=userID;
-        wallet = new Wallet(this,cash);
+        wallet = new Profile(cash);
     }
 
     public String getID() {

@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Controller {
-    public Controller() {
+
+    public void run(){
         Scanner sysScan = new Scanner(System.in);
         try {
             System.out.println("Please enter instruction file: ");
@@ -11,7 +12,6 @@ public class Controller {
         }catch(Exception e){
             System.out.println("ERROR: file not found: "+e);
         }
-
     }
 
     private void processLine(Market main, Scanner fileScan) {

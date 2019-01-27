@@ -8,12 +8,4 @@ public class Block extends Node {
         this.next = next;
         hashCode = this.hashCode();
     }
-
-    public Transaction getTransaction() {
-        return transaction;
-    }
-
-    public int getHashCode() {
-        return hashCode;
-    }
 }

@@ -1,8 +1,8 @@
-public class CCUnits extends LinkItem {
+public class CurrUnits extends LinkItem {
     private String currencyID;
     private int currencyAmount;
 
-    public CCUnits(String currencyID, int currencyAmount) {
+    public CurrUnits(String currencyID, int currencyAmount) {
         this.currencyID = currencyID;
         this.currencyAmount = currencyAmount;
     }
@@ -17,5 +17,10 @@ public class CCUnits extends LinkItem {
 
     public void addOrSubtractCurrency(int amount) {
         this.currencyAmount += amount;
+    }
+
+    @Override
+    public String toString() {
+        return currencyAmount+" "+currencyID;
     }
 }
