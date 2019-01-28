@@ -14,15 +14,12 @@ public class BlockChain extends LinkedList{
 
     @Override
     public String toString() {
-
+        String result="";
+        Block curr = top;
+        while(curr!=null){
+            result += curr + "\n\t";
+            curr=curr.getNext();
+        }
+        return result;
     }
-    /*
-    name id remaining
-        transaction1
-        transaction2
-        transaction3
-        transaction4
-        transaction5
-        transaction6
-     */
 }

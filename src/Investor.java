@@ -14,7 +14,12 @@ public class Investor extends LinkItem {
     }
 
     public void report(){
+        System.out.println(name+" "+userID+" "+wallet);
+    }
 
+    @Override
+    public String toString() {
+        return name+" "+userID;
     }
 
     public boolean hasSufficientCurr(String currID, int amount){

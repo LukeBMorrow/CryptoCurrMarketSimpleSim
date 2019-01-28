@@ -1,15 +1,16 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
-
+import java.io.File;
 public class Controller {
 
     public void run(){
         Scanner sysScan = new Scanner(System.in);
         try {
             System.out.println("Please enter instruction file: ");
-            Scanner fileScan = new Scanner(sysScan.nextLine());
+            Scanner fileScan = new Scanner(new File(sysScan.nextLine()));
             Market main = new Market();
             processLine(main,fileScan);
-        }catch(Exception e){
+        }catch(FileNotFoundException e){
             System.out.println("ERROR: file not found: "+e);
         }
     }
@@ -38,6 +39,8 @@ public class Controller {
                         main.cryport(line[1]);
                         break;
                     case "#":
+                        break;
+                    case "":
                         break;
                     default:
                         System.out.println("ERROR: unknown command: " + line[0]);

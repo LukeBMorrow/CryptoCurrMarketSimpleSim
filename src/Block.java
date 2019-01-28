@@ -8,4 +8,14 @@ public class Block extends Node {
         this.next = next;
         hashCode = this.hashCode();
     }
+
+    @Override
+    public Block getNext() {
+        return next;
+    }
+
+    @Override
+    public String toString() {
+        return hashCode+" "+transaction;
+    }
 }

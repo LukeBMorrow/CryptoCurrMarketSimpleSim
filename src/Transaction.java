@@ -1,5 +1,5 @@
 public class Transaction {
-    private String type;
+    private boolean isTrade;
     private int amount;
     private Investor receiver;
     private Investor sender;
@@ -8,21 +8,21 @@ public class Transaction {
         this.amount =amount;
         this.sender=sender;
         this.receiver =receiver;
-        type = "trade";
+        isTrade=true;
     }
 
     public Transaction(int amount, Investor receiver){
         this.amount =amount;
         this.receiver =receiver;
-        type="mine";
+        isTrade=false;
     }
 
     public String toString(){
         String result;
-        if(type.equals("trade")) {
-            result = (type +" "+ receiver.getID() +" "+ sender.getID()+" "+ amount);
+        if(isTrade) {
+            result = (" Trade: "+ receiver.getID() +" "+ sender.getID()+" "+ amount);
         }else{
-            result = (type +" "+ receiver.getID() +" "+ amount);
+            result = (" Mine: "+ receiver.getID() +" "+ amount);
         }
         return result;
     }

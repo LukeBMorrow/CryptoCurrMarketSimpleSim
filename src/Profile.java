@@ -18,21 +18,29 @@ public class Profile {
 
     public void addCurrency(String currID, int amount){
         LinkItem ownedCurr = currencies.search(currID);
-        if (ownedCurr instanceof CurrUnits) {
-            ((CurrUnits) ownedCurr).addOrSubtractCurrency(amount);
+        if(ownedCurr==null){
+            currencies.addItem(new CurrUnits(currID, amount));
+        }else {
+            if (ownedCurr instanceof CurrUnits) {
+                ((CurrUnits) ownedCurr).addOrSubtractCurrency(amount);
+            }
         }
     }
 
     public void removeCurrency(String currID, int amount){
         LinkItem ownedCurr = currencies.search(currID);
-        if (ownedCurr instanceof CurrUnits) {
-            ((CurrUnits) ownedCurr).addOrSubtractCurrency(-amount);
+        if(ownedCurr==null){
+            currencies.addItem(new CurrUnits(currID, amount));
+        }else {
+            if (ownedCurr instanceof CurrUnits) {
+                ((CurrUnits) ownedCurr).addOrSubtractCurrency(-amount);
+            }
         }
     }
 
     @Override
     public String toString(){
-
+        return " $"+((CurrUnits)currencies.search("CAD")).getCurrencyAmount()+"\n\t"+currencies;
     }
     /*
     name id cash

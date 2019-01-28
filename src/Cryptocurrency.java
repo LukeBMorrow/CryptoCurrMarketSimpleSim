@@ -30,7 +30,12 @@ public class Cryptocurrency extends LinkItem {
     }
 
     public void report(){
-        System.out.println(name +" "+ currID +" "+ quantity+" unmined\n");
-        System.out.println("\t "+chain);
+        System.out.println(name +" "+ currID +" "+ quantity+" un-mined\n");
+        System.out.println("\t"+chain);
     }
+
+    @Override
+    public String toString() {
+        return name +" "+ currID +" "+ quantity+" un-mined";
+}
 }
