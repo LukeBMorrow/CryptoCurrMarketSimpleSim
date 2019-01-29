@@ -18,7 +18,7 @@ public class HashTable {
             int hashKey = generateHash(o.getID());
             table[hashKey].addItem(o);
         } else
-            System.out.println("Error: "+o.getID()+" already exists.");
+            System.out.println("ERROR: "+o.getID()+" already exists.");
     }
 
     private int generateHash(String s) {

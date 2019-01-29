@@ -1,17 +1,18 @@
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.File;
+
 public class Controller {
 
-    public void run(){
+    public void run() {
         Scanner sysScan = new Scanner(System.in);
         try {
             System.out.println("Please enter instruction file: ");
             Scanner fileScan = new Scanner(new File(sysScan.nextLine()));
             Market main = new Market();
-            processLine(main,fileScan);
-        }catch(FileNotFoundException e){
-            System.out.println("ERROR: file not found: "+e);
+            processLine(main, fileScan);
+        } catch (FileNotFoundException e) {
+            System.out.println("ERROR: file not found: " + e);
         }
     }
 
@@ -21,16 +22,32 @@ public class Controller {
             if (!line[0].equalsIgnoreCase("end")) {
                 switch (line[0]) {
                     case "NEW":
-                        main.newInvestor(line[1], line[2], Integer.parseInt(line[3]));
+                        try {
+                            main.newInvestor(line[1]+line[2], line[3], Integer.parseInt(line[4]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid currency amount " + line[4]);
+                        }
                         break;
                     case "CRYPTO":
-                        main.newCryptocurrency(line[1], line[2], Integer.parseInt(line[3]));
+                        try {
+                            main.newCryptocurrency(line[1], line[2], Integer.parseInt(line[3]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid currency amount " + line[3]);
+                        }
                         break;
                     case "MINE":
-                        main.mine(line[1], line[2], Integer.parseInt(line[3]));
+                        try {
+                            main.mine(line[1], line[2], Integer.parseInt(line[3]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid currency amount " + line[3]);
+                        }
                         break;
                     case "TRADE":
-                        main.trade(line[1], line[2], line[3], Integer.parseInt(line[4]), line[5], Integer.parseInt(line[6]));
+                        try {
+                            main.trade(line[1], line[2], line[3], Integer.parseInt(line[4]), line[5], Integer.parseInt(line[6]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid currency amount " + line[4] + " or "+line[6]);
+                        }
                         break;
                     case "REPORT":
                         main.report(line[1]);
@@ -47,7 +64,7 @@ public class Controller {
                         break;
 
                 }
-                processLine(main,fileScan);
+                processLine(main, fileScan);
             }
         }
 

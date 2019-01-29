@@ -16,7 +16,8 @@ public class CurrUnits extends LinkItem {
     }
 
     public void addOrSubtractCurrency(int amount) {
-        this.currencyAmount += amount;
+        assert((amount+currencyAmount)>=0);
+        currencyAmount += amount;
     }
 
     @Override

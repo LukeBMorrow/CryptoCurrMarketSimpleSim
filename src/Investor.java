@@ -28,7 +28,7 @@ public class Investor extends LinkItem {
 
     public void transfer(String currID,int amount, Investor receiver){
         wallet.removeCurrency(currID, amount);
-        receiver.wallet.addCurrency(currID, amount);
+        receiver.receive(currID, amount);
     }
 
     public void receive(String currID, int amount){

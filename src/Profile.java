@@ -11,44 +11,32 @@ public class Profile {
         LinkItem ownedCurr = currencies.search(currID);
 
         if (ownedCurr instanceof CurrUnits) {
-            result = ((CurrUnits) currencies.search(currID)).getCurrencyAmount() >= amount;
+            result = ((CurrUnits) ownedCurr).getCurrencyAmount() >= amount;
         }
         return result;
     }
 
-    public void addCurrency(String currID, int amount){
+    public void addCurrency(String currID, int amount) {
         LinkItem ownedCurr = currencies.search(currID);
-        if(ownedCurr==null){
+        if (ownedCurr == null) {
             currencies.addItem(new CurrUnits(currID, amount));
-        }else {
+        } else {
             if (ownedCurr instanceof CurrUnits) {
                 ((CurrUnits) ownedCurr).addOrSubtractCurrency(amount);
             }
         }
     }
 
-    public void removeCurrency(String currID, int amount){
+    public void removeCurrency(String currID, int amount) {
         LinkItem ownedCurr = currencies.search(currID);
-        if(ownedCurr==null){
-            currencies.addItem(new CurrUnits(currID, amount));
-        }else {
-            if (ownedCurr instanceof CurrUnits) {
-                ((CurrUnits) ownedCurr).addOrSubtractCurrency(-amount);
-            }
+        if (ownedCurr instanceof CurrUnits) {
+            ((CurrUnits) ownedCurr).addOrSubtractCurrency(-amount);
         }
+
     }
 
     @Override
-    public String toString(){
-        return " $"+((CurrUnits)currencies.search("CAD")).getCurrencyAmount()+"\n\t"+currencies;
+    public String toString() {
+        return " $" + ((CurrUnits) currencies.search("CAD")).getCurrencyAmount() + "\n\t" + currencies;
     }
-    /*
-    name id cash
-        transaction1
-        transaction2
-        transaction3
-        transaction4
-        transaction5
-        transaction6
-     */
 }
