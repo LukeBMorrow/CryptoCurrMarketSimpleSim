@@ -30,6 +30,6 @@ public class CurrUnits extends LinkItem {
 
     @Override
     public String toString() {
-        return currencyAmount + " " + currencyID;
+        return currencyAmount + "    \t" + currencyID;
     }
 }

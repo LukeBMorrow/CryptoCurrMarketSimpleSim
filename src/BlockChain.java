@@ -6,7 +6,7 @@
             -(int, Investor, Investor) is for adding trades
             -(int, Investor) is for adding mines
  */
-public class BlockChain extends LinkedList {
+public class BlockChain {
     private Block top;
 
     public BlockChain() {

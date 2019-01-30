@@ -22,6 +22,6 @@ public class Block extends Node {
 
     @Override
     public String toString() {
-        return hashCode+" "+transaction;
+        return hashCode+"     \t"+transaction;
     }
 }
