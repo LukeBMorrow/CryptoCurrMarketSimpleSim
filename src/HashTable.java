@@ -1,3 +1,11 @@
+/*
+    HashTable
+    This class is a standard (closed) hash table.
+    Behaviour includes:
+    -addItem        adds a new item to the hashTable
+    -generateHash   generates a consistent hashCode
+    -getItem        searches for an item and returns it (returns null if not found)
+ */
 
 public class HashTable {
     private static final int TABLE_SIZE = 97;//large and prime to minimize collisions
@@ -18,7 +26,7 @@ public class HashTable {
             int hashKey = generateHash(o.getID());
             table[hashKey].addItem(o);
         } else
-            System.out.println("ERROR: "+o.getID()+" already exists.");
+            System.out.println("ERROR: " + o.getID() + " already exists.");
     }
 
     private int generateHash(String s) {

@@ -1,3 +1,10 @@
+/*
+    LinkedList
+    This is a standard linked list class using a standard Node class.
+    Behaviours include:
+    -addItem        adds a new item to the linked list
+    -search         searches for an item in a linked list and returns it (returns null if not found)
+ */
 public class LinkedList {
     private Node top;
 
@@ -24,11 +31,11 @@ public class LinkedList {
 
     @Override
     public String toString() {
-        String result="";
+        String result = "";
         Node curr = top;
-        while(curr!=null){
+        while (curr != null) {
             result += curr + "\n\t";
-            curr=curr.getNext();
+            curr = curr.getNext();
         }
         return result;
     }

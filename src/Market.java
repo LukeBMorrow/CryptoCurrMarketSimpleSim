@@ -1,3 +1,18 @@
+/*
+    Market
+    This class groups investors and crypto-currencies together and directs
+    commands to their respective location and prints errors if:
+        -the investor isn't found
+        -the currency isn't found
+        -the investor is trying to trade more money than they have
+    Behaviours include:
+    -newCryptocurrency  creates a new crypto-currency and adds it to the HashTable of crypto-currencies
+    -newInvestor        creates a new investor and adds it to the HashTable of investors
+    -mine               mines a specified amount of a specified cryptocurrency and gives it to the specified investor
+    -trade              trades crypto-currency between two investors
+    -report             reports all of the currencies currently held by a specified investor
+    -cryport            reports all trades/mines that have happened to a specified crypto-currency
+*/
 public class Market {
     private HashTable investors;
     private HashTable cryptoCurrencies;
@@ -9,18 +24,21 @@ public class Market {
     }
 
     public void newCryptocurrency(String name, String currID, int amount) {
+        assert (amount >= 0);//can only initialize a cryptocurrency with a zero/positive amount of mine-able resources
         if (currID.length() > 4) {
-            System.out.println("ERROR: investor ID " + currID + " too long");
+            System.out.println("ERROR: currency ID " + currID + " is too long");
         } else {
             cryptoCurrencies.addItem(new Cryptocurrency(name, currID, amount));
         }
     }
 
     public void newInvestor(String name, String userID, int cash) {
+        assert (cash >= 0);//can only be initialized with a zero/positive amount of cash
         investors.addItem(new Investor(name, userID, cash));
     }
 
     public void mine(String investorID, String currID, int amount) {
+        assert (amount >= 0);//can only mine a zero/positive amount of currency
         Investor receiver = ((Investor) investors.getItem(investorID));
         Cryptocurrency currency = ((Cryptocurrency) cryptoCurrencies.getItem(currID));
         if (receiver == null) {
@@ -33,7 +51,7 @@ public class Market {
     }
 
     public void trade(String investorID1, String investorID2, String currID1, int curr1Amount, String currID2, int curr2Amount) {
-        assert(curr1Amount>=0 && curr2Amount>=0);
+        assert (curr1Amount >= 0 && curr2Amount >= 0);//can only trade zero/positive amounts
         Investor investor1 = ((Investor) investors.getItem(investorID1));
         Investor investor2 = ((Investor) investors.getItem(investorID2));
         Cryptocurrency currency1 = ((Cryptocurrency) cryptoCurrencies.getItem(currID1));

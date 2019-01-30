@@ -1,3 +1,9 @@
+/*
+    Block
+    This class is mostly the same as Node, but allows for transaction pairing with
+    a hashCode.
+
+*/
 public class Block extends Node {
     private int hashCode;
     private Transaction transaction;

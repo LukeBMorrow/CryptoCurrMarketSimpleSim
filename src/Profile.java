@@ -1,3 +1,12 @@
+/*
+    Profile
+    This class holds all of an investors currencies with a linked list and controls access
+    behaviours include:
+    -hasSufficientCurr      checks to see if there is more than the specified amount of
+                            a type currency in this Profile.
+    -addCurrency            adds a specified amount of the given currency type to the Profile.
+    -removeCurrency         removes a specified amount of a specific type of currency
+ */
 public class Profile {
     private LinkedList currencies;
 
@@ -29,10 +38,11 @@ public class Profile {
 
     public void removeCurrency(String currID, int amount) {
         LinkItem ownedCurr = currencies.search(currID);
+
         if (ownedCurr instanceof CurrUnits) {
+            assert (((CurrUnits) ownedCurr).getCurrencyAmount() >= amount);//a non-assert check is done in 'Market'
             ((CurrUnits) ownedCurr).addOrSubtractCurrency(-amount);
         }
-
     }
 
     @Override
